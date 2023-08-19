@@ -9,7 +9,7 @@ function App() {
         <footer>
           This project was coded by Laurel Rubel and is{" "}
           <a
-            href="https://github.com/LaurelFR/react-weather-project"
+            href="https://github.com/LaurelFR/color-by-number"
             target="_blank"
             rel="noreferrer"
           >
