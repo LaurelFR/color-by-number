@@ -6,21 +6,37 @@
 .Board {
   max-width: 900px;
   margin-top: 25px;
-  border: 1px solid black;
+  background: lightblue;
+  border-radius: 9px;
   padding: 30px;
 }
 
 .picture {
   padding: 20px;
-  border: 1px solid black;
+  background: white;
+  border-radius: 9px;
+  text-align: center;
 }
 
 .red {
   height: 350px;
   width: 350px;
   margin: 0 auto;
-  border: 1px solid black;
+  border: 1.5px solid black;
   border-radius: 50%;
+  color: red;
+  z-index: 1;
+  background: white;
+}
+
+.red-active {
+  height: 350px;
+  width: 350px;
+  margin: 0 auto;
+  border: 1.5px solid black;
+  border-radius: 50%;
+  color: red;
+  z-index: 1;
   background: red;
 }
 
@@ -28,8 +44,21 @@
   height: 300px;
   width: 300px;
   margin: 0 auto;
-  border: 1px solid black;
+  border: 1.5px solid black;
   border-radius: 50%;
+  color: orange;
+  z-index: 2;
+  background: white;
+}
+
+.orange-active {
+  height: 300px;
+  width: 300px;
+  margin: 0 auto;
+  border: 1.5px solid black;
+  border-radius: 50%;
+  color: orange;
+  z-index: 2;
   background: orange;
 }
 
@@ -37,41 +66,50 @@
   height: 250px;
   width: 250px;
   margin: 0 auto;
-  border: 1px solid black;
+  border: 1.5px solid black;
   border-radius: 50%;
-  background: yellow;
+  color: yellow;
+  z-index: 3;
+  background: white;
 }
 
 .green {
   height: 200px;
   width: 200px;
   margin: 0 auto;
-  border: 1px solid black;
+  border: 1.5px solid black;
   border-radius: 50%;
-  background: green;
+  color: green;
+  z-index: 4;
+  background: white;
 }
 
 .blue {
   height: 150px;
   width: 150px;
   margin: 0 auto;
-  border: 1px solid black;
+  border: 1.5px solid black;
   border-radius: 50%;
-  background: blue;
+  color: #0000ff;
+  z-index: 5;
+  background: white;
 }
 
 .violet {
   height: 100px;
   width: 100px;
   margin: 0 auto;
-  border: 1px solid black;
+  border: 1.5px solid black;
   border-radius: 50%;
-  background: purple;
+  color: purple;
+  z-index: 6;
+  background: white;
 }
 
 .palette {
   padding: 20px 40px;
-  border: 1px solid black;
+  background: white;
+  border-radius: 9px;
 }
 
 .palette-color {
