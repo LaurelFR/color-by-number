@@ -9,16 +9,78 @@
   background: lightblue;
   border-radius: 9px;
   padding: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .picture {
-  padding: 50px;
-  height: 600px;
+  padding: 30px;
+  height: 430px;
+  position: relative;
   background: white;
   border-radius: 9px;
   text-align: center;
 }
 
+.center {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  bottom: 41%;
+  margin: 0 auto;
+  border: 1.5px solid black;
+  border-radius: 50%;
+  color: yellow;
+  background: white;
+  z-index: 2;
+}
+
+.petal {
+  height: 150px;
+  width: 80px;
+  display: inline-block;
+  position: absolute;
+  border: 1px solid black;
+  border-radius: 120% 120% 100% 100%;
+  background: blue;
+  z-index: 1;
+}
+
+.petal-one {
+  bottom: 62%;
+}
+
+.petal-two {
+  transform: rotate(60deg);
+  right: 25%;
+  bottom: 48%;
+}
+
+.petal-three {
+  transform: rotate(120deg);
+  right: 25%;
+  bottom: 22%;
+}
+
+.petal-four {
+  transform: rotate(180deg);
+  bottom: 9%;
+}
+
+.petal-five {
+  transform: rotate(240deg);
+  left: 25%;
+  bottom: 22%;
+}
+
+.petal-six {
+  transform: rotate(300deg);
+  left: 25%;
+  bottom: 48%;
+}
+
+/*
 .center {
   height: 100px;
   width: 100px;
@@ -87,6 +149,7 @@
   top: -35%;
   right: 24%;
 }
+*/
 
 .palette {
   padding: 20px 40px;

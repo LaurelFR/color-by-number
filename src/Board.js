@@ -16,17 +16,16 @@ export default function Board() {
 
   return (
     <div className="Board">
-      <div className="picture mb-5">
+      <div className="picture mb-5 d-flex justify-content-center">
         <div className="petal petal-one"></div>
         <div className="petal petal-two"></div>
         <div className="petal petal-three"></div>
-
-        <div className={center} onClick={handleCenter}>
-          1
-        </div>
         <div className="petal petal-four"></div>
         <div className="petal petal-five"></div>
         <div className="petal petal-six"></div>
+        <div className={center} onClick={handleCenter}>
+          1
+        </div>
       </div>
       <div className="palette d-flex justify-content-around">
         <div
