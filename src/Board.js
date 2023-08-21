@@ -1,14 +1,12 @@
 import React, { useState } from "react";
 
 export default function Board() {
-  const [red, setRed] = useState("red");
+  const [center, setCenter] = useState("center");
   const [redPalette, setredPalette] = useState(false);
-  const [orange, setOrange] = useState("orange");
-  const [orangePalette, setorangePalette] = useState(false);
 
-  function handleRed() {
+  function handleCenter() {
     if (redPalette) {
-      setRed("red-active");
+      setCenter("center center-active");
     }
   }
 
@@ -16,44 +14,26 @@ export default function Board() {
     setredPalette(true);
   }
 
-  function handleOrange() {
-    if (orangePalette) {
-      setOrange("orange-active");
-    }
-  }
-
-  function handleOrangeClick() {
-    setorangePalette(true);
-  }
-
   return (
     <div className="Board">
       <div className="picture mb-5">
-        <div className={red} onClick={handleRed}>
+        <div className="petal petal-one"></div>
+        <div className="petal petal-two"></div>
+        <div className="petal petal-three"></div>
+
+        <div className={center} onClick={handleCenter}>
           1
-          <div className={orange} onClick={handleOrange}>
-            2
-            <div className="yellow">
-              3
-              <div className="green">
-                4
-                <div className="blue">
-                  5<div className="violet">6</div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
+        <div className="petal petal-four"></div>
+        <div className="petal petal-five"></div>
+        <div className="petal petal-six"></div>
       </div>
       <div className="palette d-flex justify-content-around">
         <div
           className="palette-color palette-red"
           onClick={handleRedClick}
         ></div>
-        <div
-          className="palette-color palette-orange"
-          onClick={handleOrangeClick}
-        ></div>
+        <div className="palette-color palette-orange"></div>
         <div className="palette-color palette-yellow"></div>
         <div className="palette-color palette-green"></div>
         <div className="palette-color palette-blue"></div>

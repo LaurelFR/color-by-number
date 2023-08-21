@@ -12,98 +12,80 @@
 }
 
 .picture {
-  padding: 20px;
+  padding: 50px;
+  height: 600px;
   background: white;
   border-radius: 9px;
   text-align: center;
 }
 
-.red {
-  height: 350px;
-  width: 350px;
-  margin: 0 auto;
-  border: 1.5px solid black;
-  border-radius: 50%;
-  color: red;
-  z-index: 1;
-  background: white;
-}
-
-.red-active {
-  height: 350px;
-  width: 350px;
-  margin: 0 auto;
-  border: 1.5px solid black;
-  border-radius: 50%;
-  color: red;
-  z-index: 1;
-  background: red;
-}
-
-.orange {
-  height: 300px;
-  width: 300px;
-  margin: 0 auto;
-  border: 1.5px solid black;
-  border-radius: 50%;
-  color: orange;
-  z-index: 2;
-  background: white;
-}
-
-.orange-active {
-  height: 300px;
-  width: 300px;
-  margin: 0 auto;
-  border: 1.5px solid black;
-  border-radius: 50%;
-  color: orange;
-  z-index: 2;
-  background: orange;
-}
-
-.yellow {
-  height: 250px;
-  width: 250px;
+.center {
+  height: 100px;
+  width: 100px;
+  position: relative;
   margin: 0 auto;
   border: 1.5px solid black;
   border-radius: 50%;
   color: yellow;
-  z-index: 3;
   background: white;
+  z-index: 2;
 }
 
-.green {
-  height: 200px;
-  width: 200px;
-  margin: 0 auto;
-  border: 1.5px solid black;
-  border-radius: 50%;
-  color: green;
-  z-index: 4;
-  background: white;
+.center-active {
+  background: yellow;
 }
 
-.blue {
+.petal {
+  width: 30%;
+  height: 60%;
   height: 150px;
-  width: 150px;
-  margin: 0 auto;
-  border: 1.5px solid black;
-  border-radius: 50%;
-  color: #0000ff;
-  z-index: 5;
-  background: white;
+  width: 80px;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 105% 105% 120% 120%;
+  background: blue;
+  z-index: 1;
 }
 
-.violet {
-  height: 100px;
-  width: 100px;
-  margin: 0 auto;
-  border: 1.5px solid black;
-  border-radius: 50%;
-  color: purple;
-  z-index: 6;
-  background: white;
+.petal-one {
+  transform: rotate(180deg);
+  position: relative;
+  left: 11%;
+  bottom: -4.9%;
+}
+
+.petal-two {
+  transform: rotate(240deg);
+  position: relative;
+  left: 13%;
+  bottom: -15%;
+}
+
+.petal-three {
+  transform: rotate(-54deg);
+  position: relative;
+  left: 1%;
+  bottom: -37%;
+}
+
+.petal-four {
+  position: relative;
+  top: -3.5%;
+  left: 11%;
+}
+
+.petal-five {
+  transform: rotate(60deg);
+  position: relative;
+  top: -13.9%;
+  right: 13%;
+}
+
+.petal-six {
+  transform: rotate(120deg);
+  position: relative;
+  top: -35%;
+  right: 24%;
 }
 
 .palette {
